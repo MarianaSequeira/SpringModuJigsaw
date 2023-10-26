@@ -52,6 +52,11 @@
 			<optional>true</optional>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-docker-compose</artifactId>
+		</dependency>
+
 		<!-- Actuator Dependencies -->
 
 		<dependency>
@@ -68,6 +73,24 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Observability -->
+
+		<dependency>
+			<groupId>org.springframework.modulith</groupId>
+			<artifactId>spring-modulith-observability</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-tracing-bridge-otel</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-exporter-zipkin</artifactId>
 		</dependency>
 
 		<!-- Test Dependencies -->
